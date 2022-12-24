@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: Poppins, sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.mens > h1,
+.womens > h1 {
+  margin-left: auto;
+  padding-left: 32px;
+  font-family: Poppins, sans-serif;
+}
+
+.mens > h2,
+.womens > h2 {
+  text-align: end;
+  margin: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  padding-right: 32px;
+}
+
+.mens-img-gal-container,
+.womens-img-gal-container {
+  --gap: 32px;
+  --num-cols: 4;
+  --row-height: 500px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+  border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+}
+
+.mens-img-gal-container > img,
+.womens-img-gal-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(90%);
+}
+
+@media screen and (max-width: 800px) {
+  .mens-img-gal-container,
+  .womens-img-gal-container {
+    --num-cols: 1;
+    --row-height: auto;
+  }
+}
