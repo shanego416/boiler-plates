@@ -115,6 +115,10 @@ a::after {
 
 /* NAV Ends*/
 
+/*Header Photo Starts*/
+
+/*Header Photo Ends*/
+
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 80px 1fr;
