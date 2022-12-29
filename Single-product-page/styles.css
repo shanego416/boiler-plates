@@ -149,6 +149,12 @@ a::after {
   font-style: italic;
 }
 
+@media screen and (max-width: 800px) {
+  .single-product-header-text {
+    transform: translate(-50%, -25%);
+  }
+}
+
 /*Header Photo Ends*/
 
 .footer-container {
