@@ -121,6 +121,7 @@ a::after {
   width: 100vw;
   height: 50vh;
   margin: 64px 0px;
+  z-index: 0;
 }
 
 .header-photo-container > .header-photo > img {
@@ -128,6 +129,24 @@ a::after {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+.single-product-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: #fff;
+}
+
+.single-product-header-text > h1 {
+  font-size: 56px;
+}
+
+.single-product-header-text > .single-product-header-tagline {
+  font-size: 24px;
+  font-style: italic;
 }
 
 /*Header Photo Ends*/
